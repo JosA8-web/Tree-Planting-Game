@@ -1,0 +1,35 @@
+
+/* General Page Styles */
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top, #c2f0c2 0%, #87CEEB 100%);
+}
+
+/* Game Canvas */
+#gameCanvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  cursor: crosshair;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid #2e8b57;
+  transition: transform 0.2s ease;
+}
+
+/* Optional animation for planting effect */
+.tree-planted {
+  animation: plant-pop 0.4s ease-in-out;
+}
+
+@keyframes plant-pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
